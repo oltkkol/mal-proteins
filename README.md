@@ -26,17 +26,19 @@ The whole dataset produced from steps 2-iii, 2-vi, 2-vii are available in folder
 ## Produced CSV data schema
 The produced CSV file contains the following columns:
 
-`ProteinName` ... UniProt protein name (ID),
-`FullName` ... human readable protein name,
-`PDBs` ... PDB identifiers associated with the UniProt ID,
-`SsLens` ... list of secondary structure lengths separated by ',' in AA,
-`SeqLen` ... length of the protein sequence in AA,
-`SsCount` ... number of secondary structures,
-`SsAvgLen` ... average length of the secondary structures in AA,
-`SsLenSum` ... sum of secondary structure lengths in AA,
-`DomainCount` ... number of domains.
+|Column Name|Descripton|
+|--|--|
+|`ProteinName`|UniProt protein name (ID)|
+|`FullName`| human readable protein name |
+|`PDBs`|PDB identifiers associated with the UniProt ID |
+|`SsLens`| list of secondary structure lengths separated by ',' in AA |
+|`SeqLen`| length of the protein sequence in AA |
+|`SsCount`| number of secondary structures |
+|`SsAvgLen`| average length of the secondary structures in AA |
+|`SsLenSum`| sum of secondary structure lengths in AA |
+|`DomainCount`| number of domains |
 
 ## Language
 Extension of an older project in VB.NET, use Visual Studio.NET for compilation.
 
-The fitting script in `/fitting_script` is written in R.
+The fitting script in `/fitting_script` dir is written in R.
