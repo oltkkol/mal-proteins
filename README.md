@@ -18,10 +18,7 @@ The software assumes the following workflow:
     6. load .filter file into the program,
     7. export the MA tables.
 
-3. Analyze the data.
-
-## Publication and used data
-The whole dataset produced from steps 2-iii, 2-vi, 2-vii are available in folder `dataset`.
+3. Analyze and fit the data.
 
 ## Produced CSV data schema
 The produced CSV file contains the following columns:
@@ -37,6 +34,9 @@ The produced CSV file contains the following columns:
 |`SsAvgLen`| average length of the secondary structures in AA |
 |`SsLenSum`| sum of secondary structure lengths in AA |
 |`DomainCount`| number of domains |
+
+## Publication and used data
+The whole dataset produced from steps 2-iii, 2-vi, 2-vii are available in folder `dataset`.
 
 ## Language
 Extension of an older project in VB.NET, use Visual Studio.NET for compilation.
