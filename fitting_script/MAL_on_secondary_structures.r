@@ -136,8 +136,6 @@ res_variance = t(sapply(c(F,T), function(l){
   sapply(1:5, function(model){
     fit = par_estimates(model, log_ls=l, log_rs=l, d, R=0)
     sigma = sqrt(sum((fit$fitted_values[aggregatedData$SsCount]-aggregatedData$SsAvgLen)^2 * fit$fit$weights) / (length(resid(fit$fit))-length(coef(fit$fit))))
-    #sum(resid(fit$fit)^2 * fit$fit$weights) / (length(resid(fit$fit))-length(coef(fit$fit)))
-    #summary(fit$fit)$sigma^2
     return(sigma)
   })
 }))
@@ -150,6 +148,7 @@ library(latex2exp)
 library(showtext)
 font_add("Palatino", "pala.ttf")
 showtext_auto()
+
 
 plot_data = data.frame(
   model = rep(1:5, each = max(d$SsCount)),
@@ -184,11 +183,10 @@ ggplot(plot_data, aes(x=SsCount, y=SsAvgLen))+
   geom_point(shape=16, aes(alpha=N))+ #alpha=0.5
   geom_line(aes(y=SsAvgLen_fitted, lty=Weights, group=Weights), color="red")+
   #annotate('text', x = 80, y = 15, label = "Value~is~sigma~R^{2}==0.6 ",parse = TRUE,size=5) +
-  geom_text(data=labels, aes(label = label), x = 80, y = 15,  size=14, parse = TRUE, family="Palatino", hjust=0)+
+  geom_text(data=labels, aes(label = label), x = 78, y = 17.0,  size=14, parse = TRUE, family="Palatino", hjust=0)+
   labs(x="Number of secondary structures in protein (x)", y="Average secondary structure length (y)", alpha="Count", lty="Estimator")+
   scale_alpha_continuous(breaks=c(1,50,100,150), range = c(0.25,1), labels=paste0(c(1,50,100,150)," obs.") )+
   facet_wrap(~ model)+
-  coord_cartesian(ylim = c(4,16), clip = "on")+
   theme_bw()+
   theme(text = element_text(family = 'Palatino', size=34, lineheight = 0.3), legend.key.width=unit(5,"mm"), legend.spacing.x = unit(3,"mm"))
 
