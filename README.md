@@ -35,7 +35,11 @@ The produced CSV file contains the following columns:
 |`SsLenSum`| sum of secondary structure lengths in AA |
 |`DomainCount`| number of domains |
 
-Note the column separator is `\t` and decimal separator is `,` due to cultural settings.
+Use: 
+
+`\t` ... decimal separator,
+
+`,` due to cultural settings.
 
 ## Publication and used data
 The whole dataset produced from steps 2. iii., 2. vi., 2. vii. are available in folder `/dataset/final ma data`, specifically the `min95obs_mmseq_30_rich.csv` (min. 95% sequence observed, MMSeqs2 clustering at 30% identity).
