@@ -1,6 +1,6 @@
 # Data preparation --------------------------------------------------------
 
-d = read.csv("datafiles/min95obs_mmseq_30_rich.csv", sep="\t", dec=",", head=T)
+d = read.csv("min95obs_mmseq_30_rich.csv", sep="\t", dec=",", head=T)
 aggregatedData = aggregate(d$SsAvgLen, list(d$SsCount), mean)
 colnames(aggregatedData) = c("SsCount", "SsAvgLen")
 
@@ -22,15 +22,16 @@ b = boot(d, function(d, i){
     cor(aggregatedData$SsCount, aggregatedData$SsAvgLen, method = "pearson"),
     cor(aggregatedData$SsCount, aggregatedData$SsAvgLen, method = "spearman")
   )
-}, R=10) #10000
+}, R=1000) #10000
 
 cor_res = data.frame(
-  coef = c("Pearson r", "Spearman rho", "Correlation ratio", "Pearson r (binned)", "Spearman rho"),
   val = b$t0,
   lwr = apply(b$t, 2, quantile, 0.05/2),
   upr = apply(b$t, 2, quantile, 1-0.05/2)
 )
-write.csv2(cor_res, file = "table1.csv", row.names = F)
+
+rownames(cor_res) <- c("Pearson r", "Spearman rho", "Correlation ratio", "Pearson r (binned)", "Spearman rho (binned)")
+write.table(round(cor_res, 3), file = "table1.tsv", sep="\t")
 
 
 # Fitting nonlinear models ------------------------------------------------
@@ -102,9 +103,10 @@ par_estimates = function(model_id, data, log_ls=F, log_rs=F, alpha=0.05, R=0, we
 
 
 # Table 2 - fitting models 1-5 --------------------------------------------
+USE_WEIGHTS <- FALSE
 
 tab2 = t(sapply(1:5, function(model){
-  fit = par_estimates(model, d, log_ls=F, log_rs=F, R=0, weighted = T)
+  fit = par_estimates(model, d, log_ls=F, log_rs=F, R=0, weighted = USE_WEIGHTS)
   res = c(model=model,a=NA, b=NA, c=NA, d=NA, SE_a=NA, SE_b=NA, SE_c=NA, SE_d=NA, s=NA, AIC=NA)
   res[rownames(fit$coefficients)] = fit$coefficients[,"Estimate"]
   res[paste0("SE_",rownames(fit$coefficients))] = fit$coefficients[,"Std. Error"]
@@ -113,7 +115,7 @@ tab2 = t(sapply(1:5, function(model){
   return(res)
 }))
 
-write.csv2(tab2, file = "table2.csv", row.names = F, na="")
+write.table(tab2, file = "table2.tsv", row.names = F, na="", sep="\t")
 
 
 
