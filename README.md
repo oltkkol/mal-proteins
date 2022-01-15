@@ -42,7 +42,7 @@ Use:
 `,` due to cultural settings.
 
 ## Publication and used data
-The whole dataset produced from steps 2. iii., 2. vi., 2. vii. are available in folder `/dataset/final ma data`, specifically the `min95obs_mmseq_30_rich.csv` (min. 95% sequence observed, MMSeqs2 clustering at 30% identity).
+The whole dataset produced from steps 2. iii., 2. vi., 2. vii. is available in folder `/dataset/`, specifically the `min95obs_mmseq_30_rich.csv` (min. 95% sequence observed, MMSeqs2 clustering at 30% identity, see schema above).
 
 ## Language
 Extension of an older project in VB.NET, use Visual Studio.NET for compilation.
