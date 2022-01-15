@@ -1,11 +1,11 @@
-﻿Imports System.Xml
+Imports System.Xml
 Imports System.Xml.XPath
 Imports System.Text.RegularExpressions
 Imports System.Text
 Imports System.IO
 
 Public Class Form1
-    Private _ReadedData As List(Of Protein) = Nothing
+    Private _AvailableData As List(Of Protein) = Nothing
     Private _FilterPDBs As HashSet(Of String) = Nothing
     Private _FilterUniRef As HashSet(Of String) = Nothing
     Private _SIFTSPDBObservedMapper As Dictionary(Of String, Protein) = Nothing
@@ -43,31 +43,31 @@ Public Class Form1
         Dim maxCount As Integer = 0
 
         Me.SetStatusLabel("Parsing...")
-        _ReadedData = q.GetProteinsFromXMLFile(sFile,
+        _AvailableData = q.GetProteinsFromXMLFile(sFile,
                                                 bCheckProteinExperimentalExistence,
                                                 _SIFTSPDBObservedMapper,
                                                     Sub(s) Me.SetStatusLabel("Processed: " + s))
 
-        maxCount = _ReadedData.Count
+        maxCount = _AvailableData.Count
         SetPGMax(maxCount)
 
         Me.SetStatusLabel("Directioning proteins...")
 
         'FILTER
-        Dim nonTumorProteins As New List(Of Protein)(10 ^ 6)
+        'Dim nonTumorProteins As New List(Of Protein)(10 ^ 6)
 
-        For Each p As Protein In _ReadedData
-            If Not Regex.IsMatch(p.ProteinFullName, "(tumor)|(necro)|(antigen)") Then
-                'If Regex.IsMatch(p.ProteinFullName, "(tumor)|(necro)") Then
-                nonTumorProteins.Add(p)
-            End If
-        Next
+        'For Each p As Protein In _AvailableData
+        '    If Not Regex.IsMatch(p.ProteinFullName, "(tumor)|(necro)|(antigen)") Then
+        '        'If Regex.IsMatch(p.ProteinFullName, "(tumor)|(necro)") Then
+        '        nonTumorProteins.Add(p)
+        '    End If
+        'Next
 
-        _ReadedData = nonTumorProteins
+        '_AvailableData = nonTumorProteins
 
         SetPGDone()
 
-        Me.SetStatusLabel("Ready. Got " & _ReadedData.Count.ToString() & " proteins... Click Save to export data")
+        Me.SetStatusLabel("Ready. Got " & _AvailableData.Count.ToString() & " proteins... Click Save to export data")
         MessageBox.Show("Done!" & vbNewLine, Me.Text, MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
@@ -119,7 +119,7 @@ Public Class Form1
                            "SsLenSum" + vbTab +
                            "DomainCount")
 
-        For Each p In _ReadedData
+        For Each p In _AvailableData
             If _FilterPDBs IsNot Nothing Then
                 Dim filterOut = True
 
@@ -176,7 +176,7 @@ Public Class Form1
     Private Sub SaveAllToFasta(ByVal sFile As String)
         Dim file = My.Computer.FileSystem.OpenTextFileWriter(sFile, True, Encoding.ASCII)
 
-        For Each p In _ReadedData
+        For Each p In _AvailableData
             file.WriteLine(">" + p.ProteinName)
             file.WriteLine(p.ProteinSequence)
             file.WriteLine("")
@@ -413,8 +413,8 @@ Public Class UniprotParser
                                 End If
                             Next
 
-                            If bestObservation.ObservationGapLength < 4 Then
-                                'If bestObservation.ObservedRatio > 0.95 Then
+                            'If bestObservation.ObservationGapLength < 4 Then
+                            If bestObservation.ObservedRatio > 0.95 Then
                                 proteins.Add(p)
                             End If
                         End If
