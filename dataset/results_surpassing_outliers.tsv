@@ -1,0 +1,101 @@
+ID	FullName	SsCount	SsAvgLen	StRes
+ATPF_SPIOL	ATP synthase subunit b, chloroplastic	2	73,5	10,63186557
+ATPF_MYCS2	ATP synthase subunit b	2	65	9,155691362
+TPM1_RABIT	Tropomyosin alpha-1 chain	2	60,5	8,37418737
+ZAPB_ECOLI	Cell division protein ZapB	1	74	7,128988926
+HPPA_THEMA	K(+)-stimulated pyrophosphate-energized sodium pump	36	16,61111111	6,878295082
+ATPF2_SPIOL	ATP synthase subunit b', chloroplastic	3	42	6,640068952
+CEIA_ECOLX	Colicin-Ia	21	18,52380952	6,179285601
+COX13_THET8	Cytochrome c oxidase polypeptide I+III	39	14,53846154	5,594138091
+STMN4_HUMAN	Stathmin-4	3	36	5,363996685
+EMRD_ECOLI	Multidrug resistance protein D	17	17,64705882	5,039666904
+NCCX_ALCXX	Nickel-cobalt-cadmium resistance protein NccX	4	30,25	4,986664317
+ATPFD_MYCS2	ATP synthase subunit b-delta	23	15,73913043	4,860611208
+HLYE_ECOLI	Hemolysin E, chromosomal	13	18,84615385	4,831794576
+MURJ_THEAB	Lipid II flippase MurJ	27	14,96296296	4,827223189
+ESX2_STRA5	ESAT-6-like protein SAG1039	2	40	4,814002513
+CAIT_ECOLI	L-carnitine/gamma-butyrobetaine antiporter	25	15,16	4,741168977
+VATD_BOVIN	V-type proton ATPase subunit D	8	22	4,67501016
+YCIF_ECOLI	Protein YciF	5	26	4,555700764
+EXBB_ECOLI	Biopolymer transport protein ExbB	9	20,66666667	4,530369792
+SNP25_HUMAN	Synaptosomal-associated protein 25	3	32	4,513281841
+FTNA_ECOLI	Bacterial non-heme ferritin	5	25,8	4,500790701
+COX3_BOVIN	Cytochrome c oxidase subunit 3	10	19,8	4,492956662
+MDFA_ECOLI	Multidrug transporter MdfA	22	15,27272727	4,469818786
+ATPG_MYCS2	ATP synthase gamma chain	13	18	4,457191951
+SECDF_THET8	Protein translocase subunit SecDF	44	12,63636364	4,427496695
+NTPD_ENTHA	V-type sodium ATPase subunit D	7	22,28571429	4,396152345
+NU5M_YARLI	NADH-ubiquinone oxidoreductase chain 5	42	12,71428571	4,376050325
+BFRB_MYCTU	Ferritin BfrB	5	25,2	4,336060512
+CTAA_BACSU	Heme A synthase	13	17,69230769	4,320972815
+TOM22_HUMAN	Mitochondrial import receptor subunit TOM22 homolog	1	51	4,303993354
+MIS12_HUMAN	Protein MIS12 homolog	7	22	4,303337046
+VATE_YEAST	V-type proton ATPase subunit E	9	19,88888889	4,243870219
+MCJD_ECOLX	Microcin-J25 export ATP-binding/permease protein McjD	33	13,3030303	4,231589
+KCNE2_HUMAN	Potassium voltage-gated channel subfamily E member 2	3	30,66666667	4,229710226
+VATG1_HUMAN	V-type proton ATPase subunit G 1	2	36,5	4,206166075
+BAT1_MYCRK	Burkholderia TALE-like protein 1	47	12,12765957	4,165085754
+NAH1_METJA	Na(+)/H(+) antiporter 1	22	14,63636364	4,10345846
+PTLA_LACLL	PTS system lactose-specific EIIA component	3	30	4,087924418
+AT5F1_BOVIN	ATP synthase F(0) complex subunit B1, mitochondrial	7	21,28571429	4,0712988
+ACTN2_HUMAN	Alpha-actinin-2	48	11,95833333	4,07053421
+VPS35_HUMAN	Vacuolar protein sorting-associated protein 35	49	11,85714286	4,030854497
+1433B_HUMAN	14-3-3 protein beta/alpha	10	18,6	4,027014465
+VAMP2_RAT	Vesicle-associated membrane protein 2	3	29,66666667	4,017031515
+Y609_METJA	Uncharacterized protein MJ0609	26	13,80769231	4,002043472
+SPF27_HUMAN	Pre-mRNA-splicing factor SPF27	5	23,8	3,951690073
+KDGL_ECOLI	Diacylglycerol kinase	4	25,75	3,881601633
+DPS_AGRFC	DNA protection during starvation protein	5	23,4	3,841869947
+VATO_HUMAN	V-type proton ATPase 21 kDa proteolipid subunit	9	18,77777778	3,834585114
+CCR5_HUMAN	C-C chemokine receptor type 5	17	15,23529412	3,818802372
+ULAA_ECOLI	Ascorbate-specific PTS system EIIC component	28	13,25	3,815438392
+UN93B_MOUSE	Protein unc-93 homolog B1	26	13,5	3,809527897
+VATE1_BOVIN	V-type proton ATPase subunit E 1	9	18,66666667	3,793656604
+CCON1_PSEST	Cbb3-type cytochrome c oxidase subunit CcoN1	28	13,17857143	3,769067967
+Y091_METJA	Uncharacterized membrane protein MJ0091	16	15,3125	3,718523139
+SYF1_HUMAN	Pre-mRNA-splicing factor SYF1	37	12,21621622	3,703508562
+COX9_YEAST	Cytochrome c oxidase subunit 9, mitochondrial	1	46	3,689863882
+PMF1_HUMAN	Polyamine-modulated factor 1	7	20	3,653629956
+SELS_HUMAN	Selenoprotein S	2	33	3,598329636
+XYLE_ECOLI	D-xylose-proton symporter	31	12,58064516	3,589830439
+PROB_STRAG	Protein B	9	18,11111111	3,589014052
+CDC5L_HUMAN	Cell division cycle 5-like protein	25	13,28	3,587649556
+KDPA_ECOLI	Potassium-transporting ATPase potassium-binding subunit	30	12,66666667	3,579333851
+UVSY_BPT4	Recombination protein uvsY	5	22,4	3,567319633
+SECY_ECOLI	Protein translocase subunit SecY	22	13,68181818	3,55391797
+LTC4S_MOUSE	Leukotriene C4 synthase	6	20,83333333	3,549565933
+PRRG_PRB01	Green-light absorbing proteorhodopsin	11	16,81818182	3,54502456
+GLT_PYRHO	Glutamate transporter homolog	25	13,2	3,538563623
+COX1_BOVIN	Cytochrome c oxidase subunit 1	30	12,6	3,534543631
+DLTB_STRT2	Teichoic acid D-alanyltransferase	23	13,43478261	3,504254934
+RAPF_BACSU	Response regulator aspartate phosphatase F	23	13,39130435	3,478663306
+MLAE_ECOLI	Intermembrane phospholipid transport system permease protein MlaE	13	15,76923077	3,469603215
+CNR2_HUMAN	Cannabinoid receptor 2	17	14,52941176	3,461476168
+BFR_PSEAE	Bacterioferritin	6	20,5	3,449314552
+TRAM_SINFN	Probable transcriptional repressor TraM	2	32	3,424662082
+ICMT_TRICA	Protein-S-isoprenylcysteine O-methyltransferase	14	15,28571429	3,411599763
+IFIT1_HUMAN	Interferon-induced protein with tetratricopeptide repeats 1	28	12,57142857	3,374919359
+LTAA_STAA8	Proton-coupled antiporter flippase LtaA	22	13,36363636	3,370737806
+DGGGP_METJA	Digeranylgeranylglyceryl phosphate synthase	15	14,86666667	3,362044163
+DPS_HALSA	DNA protection during starvation protein	6	20,16666667	3,34906317
+NEEDL_BPP22	Tail needle protein gp26	10	16,8	3,328101169
+CLCA_ECOLI	H(+)/Cl(-) exchange transporter ClcA	29	12,24137931	3,227797204
+IMB1_HUMAN	Importin subunit beta-1	66	10,31818182	3,217920337
+CAPSD_BPPF3	Capsid protein G8P	1	42	3,198560304
+ALDEC_SYNY3	Aldehyde decarbonylase	12	15,5	3,18347492
+PGPB_BACSU	Phosphatidylglycerophosphatase B	9	17	3,179728947
+VPSU_BPP4	Polarity suppression protein	9	17	3,179728947
+VTDB_HUMAN	Vitamin D-binding protein	27	12,37037037	3,174336755
+ESXA_THECD	ESAT-6-like protein EsxA	3	25,66666667	3,16631667
+ATPG_RAT	ATP synthase subunit gamma, mitochondrial	4	22,75	3,144893177
+FRIL_HUMAN	Ferritin light chain	7	18,42857143	3,143145813
+VTA1_YEAST	Vacuolar protein sorting-associated protein VTA1	11	15,72727273	3,100764051
+TNNI2_CHICK	Troponin I, fast skeletal muscle	7	18,28571429	3,096738164
+VATE_THET8	V-type ATP synthase subunit E	10	16,2	3,095130071
+BACR_HALVA	Cruxrhodopsin-3	13	14,92307692	3,09500059
+TBCA_YEAST	Tubulin-specific chaperone A	4	22,5	3,083500806
+ESXB_THECD	ESAT-6-like protein	4	22,5	3,083500806
+DPS_HELPY	DNA protection during starvation protein	6	19,16666667	3,048309026
+YETJ_BACSU	Uncharacterized protein YetJ	11	15,54545455	3,026720632
+LRP1_YEAST	Exosome complex protein LRP1	5	20,4	3,018219004
+COX1_THET8	Cytochrome c oxidase subunit 1	38	11,21052632	3,000686768
